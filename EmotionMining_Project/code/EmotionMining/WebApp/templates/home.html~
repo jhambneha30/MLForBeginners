@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>emotion-mine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <style>
+    .body{
+      height: 1000px;
+    }
+    .container-fluid{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .row {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    #left-pane{
+      background-color: #75b5aa;
+      text-align: center;
+      color: #FFFFFF;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    }
+#left-pane h4{
+  color: rgba(255,255,255,.5);
+}
+
+    #title{
+      margin-top: 100px;
+      margin-bottom: 50px;
+      font-size: 45px;
+    }
+    #right-pane{
+      background-color: #FFFFFF;
+      text-align: left;
+      color: #515151;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 60px;
+      padding-left: 100px;
+      padding-right: 100px;
+      font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    }
+    #emotion_output{
+       text-align: center;
+       font-size: 40px;
+       font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="left-pane" class="col-sm-3">
+        <div id="title">
+          emotion-mine  
+        </div>    
+        <h4>a machine learning system to detect emotions from english text</h4>
+        
+        <a class="github-button" href="https://github.com/nitish-iiitd/EmotionMining/fork" data-size="large" aria-label="Fork nitish-iiitd/EmotionMining on GitHub">Fork</a>
+        <br>
+        <a class="github-button" href="https://github.com/nitish-iiitd/EmotionMining/archive/master.zip" data-size="large" aria-label="Download nitish-iiitd/EmotionMining on GitHub">Download</a>
+        <br><br><br><hr>
+        <h3>developers</h3><br>
+        <div class="row">
+          <div  class="col-sm-3">
+            <h4>Megha</h4>
+          </div>
+          <div  class="col-sm-9">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/megha16033" data-size="large" aria-label="Follow @megha16033 on GitHub">Follow @megha16033</a>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div  class="col-sm-3">
+            <h4>Neha</h4>
+          </div>
+          <div  class="col-sm-9">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/jhambneha" data-size="large" aria-label="Follow @jhambneha on GitHub">Follow @jhambneha</a>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div  class="col-sm-3">
+            <h4>Nitish</h4>
+          </div>
+          <div  class="col-sm-9">
+            <a class="github-button" href="https://github.com/nitish-iiitd" data-size="large" aria-label="Follow @nitish-iiitd on GitHub">Follow @nitish-iiitd</a>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div  class="col-sm-3">
+            <h4>Raveena</h4>
+          </div>
+          <div  class="col-sm-9">
+
+            <a class="github-button" href="https://github.com/raveena16046" data-size="large" aria-label="Follow @raveena16046 on GitHub">Follow @raveena16046</a>
+          </div>
+          
+        </div>
+      </div>
+      <div id="right-pane" class="col-sm-9">
+        <h2>Overview</h2><hr>
+        <h4>Given an input text, classify that text into one of five kinds of emotions, which are joy, anger, fear, sadness and surprise. <br><br>Four different models are to be used for emotion classification.
+          <br>
+          LR, LDA, SVM and DL.</h4>
+          <br>
+          <h2>Demo</h2><hr>
+          <form action="/emotion" method="post">
+         
+            <h5>Enter your text:</h5>
+            <textarea class="form-control" rows="2" id="inputtext" name="text" >{{text}}</textarea>
+            <br>
+          <button type="submit" class="btn">Find Emotion</button>
+          </form>
+          <div id="emotion_output">{{emotion}}</div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+  </html>

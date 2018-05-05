@@ -1,0 +1,10 @@
+Model 1: Sigmoid on outermost for small dataset
+[Learning rate: 0.0001, epochs: 200]
+
+Model 2: Softmax on outermost for large dataset
+[Learning rate: 0.00015, epochs: 200]
+
+Model 3: Sigmoid on outermost and ReLu on hidden for small dataset
+[Learning rate: 0.000025, epochs: 2100]
+
+Model 3: Softmax on outermost and ReLu on hidden for large dataset

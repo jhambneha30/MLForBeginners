@@ -1,0 +1,5 @@
+WFF 50K Accuracy
+LR,0.90
+LDA,0.89
+SVM,0.90
+NN,0.97

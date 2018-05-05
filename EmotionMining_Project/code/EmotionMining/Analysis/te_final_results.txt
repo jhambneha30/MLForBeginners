@@ -1,0 +1,7 @@
+TE Test Accuracy
+LR,0.3807
+LDA,0.3541
+SVM,0.3518
+NN,0.3850
+CountVect,0.6455
+TfIdfVect,0.6455

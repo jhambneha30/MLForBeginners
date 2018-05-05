@@ -1,0 +1,61 @@
+Programming 
+ 
+Exploring​ ​ data​ ​ sets: 
+In​ ​ this​ ​ assignment,​ ​ you​ ​ need​ ​ to​ ​ use​ ​ two​ ​ datasets: 
+● MNIST:​ http://yann.lecun.com/exdb/mnist/ 
+● An​ ​ MNIST​ ​ subset:​ dataset_partA.h5  
+Please​ ​ explore​ ​ both​ ​ these​ ​ datasets​ ​ on​ ​ your​ ​ own,​ ​ i.e,​ ​ number/kind​ ​ of​ ​ features,​ ​ number​ ​ of​ ​ of​ ​ data 
+points,​ ​ number​ ​ of​ ​ classes.​ ​ Please​ ​ ensure​ ​ you​ ​ look​ ​ into​ ​ this​ ​ information​ ​ since​ ​ you​ ​ will​ ​ need​ ​ to 
+handle​ ​ data​ ​ accordingly​ ​ in​ ​ the​ ​ section​ ​ below. 
+
+Neural​ ​ Networks: 
+
+1.Objective​ ​ #1​ ​ [80​ ​ marks]:​ ​ ​ Implement​ ​ the​ ​ forward​ ​ and​ ​ backpropagation​ ​ algorithms​ ​ to​ ​ train 
+an​ ​ artificial​ ​ neural​ ​ network​ ​ from​ ​ scratch.​ ​ You​ ​ are​ ​ not​ ​ permitted​ ​ to​ ​ use​ ​ any​ ​ external 
+libraries​ ​ in​ ​ this​ ​ part. 
+a. Implement​ ​ a ​ ​ 2 ​ ​ layer​ ​ neural​ ​ network​ ​ with​ ​ 100​ ​ hidden​ ​ units​ ​ in​ ​ the​ ​ first​ ​ layer​ ​ and​ ​ 50 
+in​ ​ the​ ​ next.​ ​ Implement​ ​ sigmoid​ ​ activation​ ​ function​ ​ in​ ​ each​ ​ layer.​ ​ Train/test​ ​ your 
+model​ ​ on​ ​ the​ ​ MNIST​ ​ subset.​ ​ Report​ ​ accuracy​ ​ as​ ​ the​ ​ evaluation​ ​ metric​ ​ in​ ​ this​ ​ part. 
+Save​ ​ the​ ​ weights​ ​ of​ ​ your​ ​ best​ ​ model​ ​ in​ ​ a ​ file.​ Please​ ​ ensure​ ​ that​ ​ while​ ​ your 
+model​ ​ is​ ​ a ​ ​ 2 ​ ​ layer​ ​ network,​ ​ your​ ​ code​ ​ is​ ​ generalisable​ ​ and​ ​ can​ ​ be​ ​ used​ ​ out​ ​ of 
+the​ ​ box​ ​ for​ ​ an​ ​ n-layer​ ​ network​ ​ (i.e,​ ​ do​ ​ not​ ​ hard​ ​ code​ ​ equations​ ​ for​ ​ the​ ​ 2 ​ ​ layers). 
+b. Implement​ ​ a ​ ​ 2 ​ ​ hidden​ ​ layer​ ​ network​ ​ with​ ​ 100​ ​ hidden​ ​ units​ ​ in​ ​ the​ ​ first​ ​ layer​ ​ and​ ​ 50 
+in​ ​ the​ ​ next.​ ​ Implement​ ​ softmax​ ​ at​ ​ the​ ​ output​ ​ layer​ ​ and​ ​ sigmoid​ ​ in​ ​ every​ ​ other 
+layer.  
+ Train/te st your mode l on the e ntire MNIST datase t. Re port accuracy as the
+evaluation metric in this part. Save the we ights of your be st mode l in a file .
+c. Implement ReLU and Maxout, and re pe at part A and B using the se activations at
+every layer (except output).
+
+
+2. Objective #2 [20 marks]: Use the Multi-Layer Perceptron model in sklearn to create an
+artificial neural network.
+a. Implement a 2 layer neural network with 100 hidden units in the first layer and 50
+in the next. Train/test your model on the MNIST subset, using sigmoid activation
+in each layer. Report the accuracy, as compared to what you received in 1A.
+Explain reasons for an observed difference in accuracies, if any.
+b. Implement a 2 layer neural network with 100 hidden units in the first layer and 50
+in the next. Train/test your model on the entire MNIST dataset, using softmax at
+the output layer and sigmoid activation in every other layer. Report the accuracy,
+as compared to what you received in 1B. Explain the difference in accuracies, if
+any.
+
+
+3. Bonus [15 marks]: Use the Multi-Layer Perceptron model in sklearn to create an artificial
+neural ne twork.
+a. Experiment with network structure and find one that outpe rforms the one s you
+tried above . Ple ase e xpe rime nt with at le ast 3 diffe re nt ne twork structure s and
+provide your results. Try to provide some insight on the mode l structure s you trie d
+and why the be st pe rforming structure pe rforms be tte r than the othe rs
+Note :
+-
+The assignme nt is very time consuming, so please do start on time . The training time for
+the mode ls will be considerable , so starting a day be fore the de adline will not suffice .
+-
+The emphasis of this assignment is on implementing the neural network yourself
+(Objective #1). The idea behind Objective #2 is just to evaluate how your self-written
+mode l performs; Objective #1 carries majority of the marks.
+-
+Your code for Objective #1 should be executable . We will run it at the time of the
+evaluation, so please ensure both training and testing (including loading weights from the
+file ) are in working condition.

@@ -1,0 +1,24 @@
+Watch Andrew NG's lectures on Machine Learning.
+
+Roadmap to learn ML:
+1. Introduction to Machine Learning
+2. Learning Problems and the Risk Minimization Framework. 
+Loss Functions.
+Naive Bayes Classifier.
+3. Maximum Likelihood, Maximum a Posteriori, Naive Bayes Classifier. 
+4. Decision Trees; Entropy, Conditional Entropy, Information Gain
+5. Linear Regression 
+6. ML in practice (Andrew Ng's advice) :  Metzen's blog that explores Andrew Ng's advice on ML. Highly recommended.
+https://jmetzen.github.io/2015-01-29/ml_advice.html
+7. ML in practice (Cross-validation): Andrew Ng's notes on cross-validation, regularization and feature selection
+8. Logistic Regression  
+9. SVM: Andrew Ng's Notes on SVMs and Kernels
+10. Multi-class SVM and kernel methods
+11. Neural Networks; Perceptron and Multilayer Perceptron:  Tensorflow Playground - This is a wonderful tool to visualize neural networks.
+http://playground.tensorflow.org/
+12.  Backpropagation
+13. Neural Networks - II 
+ Cross-entropy, SoftMax, Maxout, Convolutional Layers
+[Refer Michael Nielsen's notes for 11, 12 and 13]
+14.  Reinforcement Learning
+15. KMeans
